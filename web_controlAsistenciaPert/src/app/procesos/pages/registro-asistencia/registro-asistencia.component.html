@@ -1,0 +1,158 @@
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> REGISTRO DE ASISTENCIA </h5>
+    </div>
+    <div class="card-body">
+
+        <form [formGroup]="formParamsFiltro">
+            <div class="row">
+                <div class="col-md-3">
+                    <label> Locales</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_local">
+                        <option value="0"> [ -- SELECCIONE-- ]</option>
+                        <option [value]="item.id_local" *ngFor="let item of locales">   {{item.nombre_local   | uppercase }}  </option>
+                    </select>     
+                </div>
+                <div class="col-md-3">
+                    <label> Ot Contable</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_OT_contable">
+                        <option value="0"> [ -- SELECCIONE-- ]</option>
+                        <option [value]="item.id_OtContable" *ngFor="let item of listaContables">   {{item.descripcion_OTContable   | uppercase}}  </option>
+                    </select> 
+                </div>
+                <div class="col-md-3">
+                    <label class="control-label"> Fecha Asistencia </label>
+                    <br>    
+                    <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha"  [bsConfig]="datepiekerConfig">
+                </div>
+                <div class="col-md-3">
+                        
+                </div>
+            </div>
+        </form>
+
+        <div class="d-flex justify-content-between" style=" margin-top: -15px;">
+            <div class="p-1 bd-highlight">
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm " placeholder="Buscar" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+            </div>
+            <div class="p-2 bd-highlight"> </div>
+        </div>
+
+        <div class="search-results tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+
+                    <tr style="height: 40px !important;">
+                        <th>Turno</th>
+                        <th>Simbolo</th>
+                        <th>Hora Inicio</th>
+                        <th>Hora Término</th>
+                        <th>Tiempo Máximo</th>
+                        <th>Estado</th>
+                        <th class="text-center" >Editar</th>
+                        <th class="text-center" >Anular</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of turnos |  filter: filtrarMantenimiento  ; index as j" [ngStyle]="{'color': item.estado == '0' && 'red'}" >
+                        <td>{{item.nombre_turno}}</td>
+                        <td>{{item.simbolo_turno}}</td>
+                        <td>{{item.horaInicio_turno}}</td>
+                        <td>{{item.horaTermino_turno}}</td>
+                        <td>{{item.tiempoMaxInicio_turno}}</td>
+                        <td>{{item.estado==1?'Activo':'Anulado'}} </td>
+                        <td class="text-center">
+                            <img src="./assets/img/editar.png"   tooltip="Editar" (click)="editar(item)"  >
+                        </td>
+                        <td class="text-center">
+                            <img src="./assets/img/anular.png" *ngIf="item.estado > 0" tooltip="Anular" (click)="anular(item)"  >
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade " id="modal_mantenimiento" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content"  >
+            <div class="p-3 card  modalHeader">
+                <div class="d-flex justify-content-between flotante">
+                    <div class=" bd-highlight">
+                        <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                    <div class=" bd-highlight">
+                        <h5 class="headerTitleModal"> REGISTRO DE TURNO </h5>
+                    </div>
+                    <div class=" bd-highlight">
+                    <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="modal-body">
+                <form [formGroup]="formParams" >
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label class=" control-label">Nombre Turno</label>
+                                <input type="text" class="form-control" id="txt_nombre" formControlName="nombre_turno"   placeholder="" maxlength="50">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">Simbolo Turno</label>
+                                <input type="text" class="form-control" id="txt_simbolo" formControlName="simbolo_turno"  placeholder="" maxlength="2">
+                            </div>
+                        </div>                             
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <label class="control-label">H. Inicio</label>
+                                <input type="time" id="txt_horaInicio"  formControlName="horaInicio_turno"   class="form-control  " maxlength="5" placeholder="00:00">
+                            </div>
+   
+                            <div class="col-md-4 ">
+                                <label class="control-label">H. Término</label>
+                                <input type="time" id="txt_horaFin"   formControlName="horaTermino_turno" class=" form-control time" maxlength="5" placeholder="00:00">
+                            </div>
+      
+                            <div class="col-md-4 ">
+                                <label class=" control-label">H. Máximo</label>
+                                <input type="time" id="txt_horaMax"   formControlName="tiempoMaxInicio_turno"   class=" form-control time" maxlength="5" placeholder="00:00">
+                            </div> 
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6">
+                                <label> Estado</label>
+                                <select class="form-control comboBox" formControlName="estado">
+                                    <option value="-1"> [ --SELECCIONE-- ]</option>
+                                    <option value="1"> Activo </option>
+                                    <option value="0"> Anulado </option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+  
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <!-- <button class="btn btn-success" (click)="saveUpdate()" title="Guardar la informacion"> <i class="fas fa-save"> Grabar</i></button> -->
+                        <img src="./assets/img/grabar.png" class="puntero" tooltip="Guardar" (click)="saveUpdate()">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

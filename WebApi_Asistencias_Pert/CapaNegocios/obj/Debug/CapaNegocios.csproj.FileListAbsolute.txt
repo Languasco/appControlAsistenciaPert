@@ -1,0 +1,112 @@
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EPPlus.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EPPlus.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EPPlus.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EPPlus.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\Compartir\GitProjects\SistemaAsistenciasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\Git_Proyectos\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll.config
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+E:\Julio\Trabajo\Git_Proyect\SistemaAsistenasCam\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaNegocios.pdb
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.pdb
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\CapaDatos.dll.config
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EPPlus.xml
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\EntityFramework.xml
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\bin\Debug\es\EntityFramework.resources.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.dll
+E:\Julio\Trabajo\sistema_controlAsistencia_Pert\WebApiAsistenciasCam\CapaNegocios\obj\Debug\CapaNegocios.pdb

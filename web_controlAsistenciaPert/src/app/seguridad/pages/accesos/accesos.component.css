@@ -1,0 +1,111 @@
+.text-warning {
+    font-weight: 600;
+}
+
+.containerDetalle {
+    overflow-y: auto;
+    height: 700px;
+}
+
+
+/* configuracion de tabla con cabecera estatica */
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 500px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/** tab control*/
+
+.nav {
+    background-color: #FFB47F;
+    padding: 5px;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.TabControl {
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #dee2e6 !important;
+}
+
+
+/** fin de tab control*/
+
+fieldset {
+    border: 1px solid #ddd !important;
+    margin: 0;
+    min-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    /* background-color:#f5f5f5; */
+    padding-left: 10px!important;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "tahoma regular";
+    margin-bottom: 0px;
+    width: 60%;
+    /* border: 0.5px solid #ddd; */
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ffffff;
+    color: #ff8457;
+}
+
+.comboBox {
+    font-weight: 600;
+}
+
+.comboBox option {
+    font-weight: 400;
+}
+
+.fa-times-circle {
+    color: gray;
+}
+
+.fa-arrow-circle-left {
+    color: gray;
+}
+
+.text-warning {
+    color: #ff8457 !important;
+}
+
+.disabledForm {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
+.custom-control-inline {
+    display: grid !important;
+    margin-right: -10px !important;
+}
+
+.linkOpcion2 {
+    color: green !important;
+    font-weight: 800;
+    text-decoration: underline !important;
+}
+.form-control,
+input {
+    height: 12px !important; 
+ 
+}

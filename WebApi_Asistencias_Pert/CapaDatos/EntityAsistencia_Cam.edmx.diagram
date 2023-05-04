@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd8f8e3057c24fa7a42c56a8f53b5d70" Name="Diagram1">
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_AccesoOpciones" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Anio" Width="1.5" PointX="7.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia_Campo" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia_Dispositivos" Width="1.5" PointX="7.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_Configurar_Asistencia_Campo" Width="1.5" PointX="3" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_GrupoTablas" Width="1.5" PointX="2.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_GrupoTablas_Det" Width="1.5" PointX="5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_TipoAsistencia" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Asis_Turno" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.Tbl_Cargo_Personal" Width="1.5" PointX="8.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Definicion_Opciones" Width="1.5" PointX="9.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.TBL_EstadoCelular" Width="1.5" PointX="10.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Estados" Width="1.5" PointX="10.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Ges_Local" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Ges_OT_Contable" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Horario_Personal" Width="1.5" PointX="12.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_IngresoPersonal" Width="1.5" PointX="6" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Mes" Width="1.5" PointX="12.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Modelo_Asistencia" Width="1.5" PointX="5.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Personal" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Usuarios" Width="1.5" PointX="7.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Delegacion" Width="1.5" PointX="12.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Empresa" Width="1.5" PointX="9.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAM_ControlAsistenciaModel.tbl_Perfil" Width="1.5" PointX="12.75" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_tbl_Asis_Turno" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_tbl_Ges_Local" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_tbl_Personal" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Asistencia_Campo_tbl_Personal" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_IngresoPersonal_tbl_Ges_Local" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1" ManuallyRouted="false" />
+        <AssociationConnector Association="CAM_ControlAsistenciaModel.FK_tbl_IngresoPersonal_tbl_Personal" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

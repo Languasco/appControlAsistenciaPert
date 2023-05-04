@@ -1,0 +1,126 @@
+
+
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> REPORTE DE LECTOR DE HUELLAS </h5>
+    </div>
+    <div class="card-body">
+
+        <form [formGroup]="formParamsFiltro">
+            <div class="row">
+                <div class="col-md-4">
+                    <label> Locales</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_local">
+                        <option value="0"> [ -- SELECCIONE-- ]</option>
+                        <option [value]="item.id_local" *ngFor="let item of locales">   {{item.nombre_local   | uppercase }}  </option>
+                    </select>     
+                </div>
+                <div class="col-md-4">
+                    <label> Jefe Cuadrilla</label>
+                    <br>     
+                    <select  class="form-control comboBox" formControlName="id_personal">
+                        <option value="0"> [ -- TODOS-- ]</option>
+                        <option [value]="item.id_personal" *ngFor="let item of jefeCuadrillas">   {{item.personal   | uppercase }}  </option>
+                    </select> 
+                </div>
+                <div class="col-md-4">
+                    <label> Tipo turno</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_turno">
+                        <option value="0"> [ -- TODOS-- ]</option>
+                        <option [value]="item.id_turno" *ngFor="let item of tiposTurnos">   {{item.nombre_turno   | uppercase}}  </option>
+                    </select> 
+                </div>
+
+            </div>
+            <div class="row"> 
+                <div class="col-md-4">
+                    <label class="control-label"> Rango Fecha  </label>
+                    <div class="input-group">
+                    <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_ini"  [bsConfig]="datepiekerConfig">
+                    <span class="input-group-addon">-</span>
+                    <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha_fin" [bsConfig]="datepiekerConfig">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="control-label"> Tipo Reporte  </label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineRadio1" formControlName="tipo" name="tipo" value="1">
+                        <label class="form-check-label" for="inlineRadio1"> Reporte Inicio Fin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineRadio2" formControlName="tipo" name="tipo" value="2">
+                        <label class="form-check-label" for="inlineRadio2"> Tareo Inicio Fin </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-4 text-center">
+                        <button class="btn  btn-sm  btn-primary"  *ngIf="formParamsFiltro.value.tipo == 1"  title="Mostrar la informacion">   <i class="fas fa-search"> Mostrar</i> </button>
+                        <button class="btn btn-sm btn-success ml-1"   (click)="descargarReporte()"   *ngIf="formParamsFiltro.value.tipo == 2"    >  <i class="fas fa-file-download"  >  </i> Descargar </button>
+                    </div>   
+                </div>
+            </div>
+        </form> 
+
+        <hr>
+
+        <div *ngIf="formParamsFiltro.value.tipo == 1">
+                    <div class="d-flex justify-content-between">
+            <div class="p-2 bd-highlight">
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm  resaltarTexto" placeholder="Auto busquedas" maxlength="50" [(ngModel)]="filtrarReporte">
+
+            </div>
+            <div class="p-2 bd-highlight">               
+            </div>
+        </div>
+
+        <div class="tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+                    <tr>
+                        <th>#</th>
+                        <th >Contrato</th>
+                        <th >Fecha</th>
+                        <th >DNI</th>
+                        <th >Nombre</th>
+                        <th >CECO</th>
+                        <th >JEFE DE CUADRILLA</th>
+                        <th >Hora_Inicio</th>
+                        <th >Posición_Inicio</th>
+                        <th >Hora_Salida</th>
+                        <th >Posición_Fin</th>
+                        <th >Horas</th>
+                        <th >ID</th>
+                        <th >CECO_(Tareo)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of reporteInicioFin  |  filter : filtrarReporte ; index as j"  >
+                        <td scope="row"> {{j + 1}} </td>
+                        <td >{{item.contrato}}</td>
+                        <td >{{item.fecha}}</td>
+                        <td >{{item.DNI}}</td>
+                        <td >{{item.nombre}}</td>
+                        <td >{{item.CECO}}</td>
+                        <td >{{item.jefeCuadrilla}}</td>
+                        <td >{{item.Hora_Inicio}}</td>
+                        <td >{{item.Posicion_Inicio}}</td>
+                        <td >{{item.Hora_Salida}}</td>
+                        <td >{{item.Posicion_Fin}}</td>
+                        <td >{{item.Horas}}</td>
+                        <td >{{item.ID}}</td>
+                        <td >{{item.CECO_Tareo}}</td>                     
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+    </div>
+</div>

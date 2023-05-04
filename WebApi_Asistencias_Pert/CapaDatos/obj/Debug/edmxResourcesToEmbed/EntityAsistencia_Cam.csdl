@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CAM_ControlAsistenciaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_AccesoOpciones">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="id_opcion" Type="Int32" />
+    <Property Name="permisos_opciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Anio">
+    <Key>
+      <PropertyRef Name="id_anio" />
+    </Key>
+    <Property Name="id_anio" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion_anio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia">
+    <Key>
+      <PropertyRef Name="id_asistencia" />
+    </Key>
+    <Property Name="id_asistencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Local" Type="Int32" />
+    <Property Name="id_OTContable" Type="Int32" />
+    <Property Name="fecha_asistencia" Type="DateTime" Precision="3" />
+    <Property Name="id_turno" Type="Int32" />
+    <Property Name="id_tasi_codigo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="horaIngreso_Asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="horaSalida_Asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="total_Asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="horaIngreso_Fijo_asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="horaSalida_Fijo_asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="horatotal_Fijo_asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="horaExtra_asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="totalHoras_Asistencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="observacion_asistencia" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_TipoAsistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia" FromRole="tbl_Asis_Asistencia" ToRole="tbl_Asis_TipoAsistencia" />
+    <NavigationProperty Name="tbl_Asis_Turno" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Asis_Turno" FromRole="tbl_Asis_Asistencia" ToRole="tbl_Asis_Turno" />
+    <NavigationProperty Name="tbl_Ges_Local" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Ges_Local" FromRole="tbl_Asis_Asistencia" ToRole="tbl_Ges_Local" />
+    <NavigationProperty Name="tbl_Ges_OT_Contable" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable" FromRole="tbl_Asis_Asistencia" ToRole="tbl_Ges_OT_Contable" />
+    <NavigationProperty Name="tbl_Personal" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Personal" FromRole="tbl_Asis_Asistencia" ToRole="tbl_Personal" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia_Campo">
+    <Key>
+      <PropertyRef Name="id_asistenciaCampo" />
+    </Key>
+    <Property Name="id_asistenciaCampo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SerieEquipo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaHora_Sincronizacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fechaHora_asistenciaCampo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_personal" Type="Int32" Nullable="false" />
+    <Property Name="id_OtContable" Type="Int32" Nullable="false" />
+    <Property Name="Latitud_asistenciaCampo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Longitud_asistenciaCampo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_ModoAsistencia" Type="Int32" />
+    <Property Name="nroObra" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="idTurno" Type="Int32" />
+    <Property Name="fechaHora_Registro" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tbl_Personal" Relationship="Self.FK_tbl_Asis_Asistencia_Campo_tbl_Personal" FromRole="tbl_Asis_Asistencia_Campo" ToRole="tbl_Personal" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia_Dispositivos">
+    <Key>
+      <PropertyRef Name="id_asistencia_dispo" />
+    </Key>
+    <Property Name="id_asistencia_dispo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_dispositivo" Type="Int32" Nullable="false" />
+    <Property Name="USERID" Type="Int32" Nullable="false" />
+    <Property Name="CHECKTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CHECKTYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VERIFYCODE" Type="Int32" Nullable="false" />
+    <Property Name="SENSORID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOGID" Type="Int32" Nullable="false" />
+    <Property Name="MachineId" Type="Int32" Nullable="false" />
+    <Property Name="UserExtFmt" Type="Int32" Nullable="false" />
+    <Property Name="WorkCode" Type="Int32" Nullable="false" />
+    <Property Name="Memoinfo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Badgenumber" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Configurar_Asistencia_Campo">
+    <Key>
+      <PropertyRef Name="id_ConfigPersonal" />
+    </Key>
+    <Property Name="id_ConfigPersonal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_OtContable" Type="Int32" />
+    <Property Name="id_Personal_Coordinador" Type="Int32" />
+    <Property Name="id_Personal" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" Nullable="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tbl_Personal" Relationship="Self.FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal" FromRole="tbl_Asis_Configurar_Asistencia_Campo" ToRole="tbl_Personal" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_GrupoTablas">
+    <Key>
+      <PropertyRef Name="id_Grupo" />
+    </Key>
+    <Property Name="id_Grupo" Type="Int32" Nullable="false" />
+    <Property Name="descripcion_grupo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_GrupoTablas_Det" Relationship="Self.FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas" FromRole="tbl_Asis_GrupoTablas" ToRole="tbl_Asis_GrupoTablas_Det" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_GrupoTablas_Det">
+    <Key>
+      <PropertyRef Name="id_grupoDetalle" />
+    </Key>
+    <Property Name="id_grupoDetalle" Type="Int32" Nullable="false" />
+    <Property Name="id_Grupo" Type="Int32" />
+    <Property Name="descripcion_grupoDetalle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="abreviatura_grupoDetalle" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="orden_grupoDetalle" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_GrupoTablas" Relationship="Self.FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas" FromRole="tbl_Asis_GrupoTablas_Det" ToRole="tbl_Asis_GrupoTablas" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_TipoAsistencia">
+    <Key>
+      <PropertyRef Name="id_tasi_codigo" />
+    </Key>
+    <Property Name="id_tasi_codigo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion_tasi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="abreviatura_tasi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="valor_tasi" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_Asistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia" FromRole="tbl_Asis_TipoAsistencia" ToRole="tbl_Asis_Asistencia" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Turno">
+    <Key>
+      <PropertyRef Name="id_turno" />
+    </Key>
+    <Property Name="id_turno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_turno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="simbolo_turno" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="horaInicio_turno" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="horaTermino_turno" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="tiempoMaxInicio_turno" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_Asistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Asis_Turno" FromRole="tbl_Asis_Turno" ToRole="tbl_Asis_Asistencia" />
+  </EntityType>
+  <EntityType Name="Tbl_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_cargo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Definicion_Opciones">
+    <Key>
+      <PropertyRef Name="id_opcion" />
+    </Key>
+    <Property Name="id_opcion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="url_opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="parentID" Type="Int32" />
+    <Property Name="nombreParentID" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="urlImagen_Opcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="orden_Opcion" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TBL_EstadoCelular">
+    <Key>
+      <PropertyRef Name="id_estadocelular" />
+    </Key>
+    <Property Name="id_estadocelular" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_operario" Type="Int32" Nullable="false" />
+    <Property Name="GpsActivo" Type="Boolean" Nullable="false" />
+    <Property Name="estadoBateria" Type="Int32" Nullable="false" />
+    <Property Name="FechaHoraAndroid" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaAgregaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModoAvion" Type="Int32" />
+    <Property Name="PlanDatos" Type="Boolean" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="abreviatura_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_estado" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tipoproceso_estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_tipoproceso_estado" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="id_Modulo" Type="Int32" />
+    <Property Name="orden_estado" Type="Int32" />
+    <Property Name="Backcolor_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="forecolor_estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Ges_Local">
+    <Key>
+      <PropertyRef Name="id_local" />
+    </Key>
+    <Property Name="id_local" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_local" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_Asistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Ges_Local" FromRole="tbl_Ges_Local" ToRole="tbl_Asis_Asistencia" />
+    <NavigationProperty Name="tbl_IngresoPersonal" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Ges_Local" FromRole="tbl_Ges_Local" ToRole="tbl_IngresoPersonal" />
+  </EntityType>
+  <EntityType Name="tbl_Ges_OT_Contable">
+    <Key>
+      <PropertyRef Name="id_OtContable" />
+    </Key>
+    <Property Name="id_OtContable" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Empresa" Type="Int32" />
+    <Property Name="id_Delegacion" Type="Int32" Nullable="false" />
+    <Property Name="codigo_OTContable" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_OTContable" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_OTContable" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="fechaApertura_OTContable" Type="DateTime" Precision="3" />
+    <Property Name="fechaBaja_OTContable" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Asis_Asistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable" FromRole="tbl_Ges_OT_Contable" ToRole="tbl_Asis_Asistencia" />
+    <NavigationProperty Name="tbl_IngresoPersonal" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1" FromRole="tbl_Ges_OT_Contable" ToRole="tbl_IngresoPersonal" />
+  </EntityType>
+  <EntityType Name="tbl_Horario_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+    </Key>
+    <Property Name="id_personal" Type="Int32" Nullable="false" />
+    <Property Name="lunes_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="lunes_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Martes_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Martes_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Miercoles_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Jueves_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Viernes_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sabado_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Domingo_I" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Domingo_S" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_IngresoPersonal">
+    <Key>
+      <PropertyRef Name="id_Ingreso" />
+    </Key>
+    <Property Name="id_Ingreso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Local" Type="Int32" />
+    <Property Name="id_OTContable" Type="Int32" />
+    <Property Name="id_Personal_Responsable" Type="Int32" />
+    <Property Name="id_personal" Type="Int32" />
+    <Property Name="ImporteProduccion_Ingreso" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="obsProduccion_Ingreso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ImporteMovilidad_Ingreso" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="obsMovilidad_Ingreso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_ingreso" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Ges_Local" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Ges_Local" FromRole="tbl_IngresoPersonal" ToRole="tbl_Ges_Local" />
+    <NavigationProperty Name="tbl_Ges_OT_Contable" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1" FromRole="tbl_IngresoPersonal" ToRole="tbl_Ges_OT_Contable" />
+    <NavigationProperty Name="tbl_Personal" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Personal" FromRole="tbl_IngresoPersonal" ToRole="tbl_Personal" />
+  </EntityType>
+  <EntityType Name="tbl_Mes">
+    <Key>
+      <PropertyRef Name="id_mes" />
+    </Key>
+    <Property Name="id_mes" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion_mes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Modelo_Asistencia">
+    <Key>
+      <PropertyRef Name="id_ModeloAsistencia" />
+    </Key>
+    <Property Name="id_ModeloAsistencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_ModeloAsistencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CampoAdicional" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+    </Key>
+    <Property Name="id_personal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo_personal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="id_OtContable" Type="Int32" />
+    <Property Name="nroDoc_personal" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="tipoDoc_personal" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos_personal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres_personal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tip_personal" Type="Int32" />
+    <Property Name="id_cargo_personal" Type="Int32" />
+    <Property Name="fotoUrl_personal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nroCelular_personal" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="email_personal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="nombreUsario_personal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contrasenia_personal" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="envio_enlinea_personal" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="id_perfil" Type="Int32" />
+    <Property Name="fecha_cese" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+    <Property Name="huella1_personal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="huella2_personal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Asis_Asistencia" Relationship="Self.FK_tbl_Asis_Asistencia_tbl_Personal" FromRole="tbl_Personal" ToRole="tbl_Asis_Asistencia" />
+    <NavigationProperty Name="tbl_Asis_Asistencia_Campo" Relationship="Self.FK_tbl_Asis_Asistencia_Campo_tbl_Personal" FromRole="tbl_Personal" ToRole="tbl_Asis_Asistencia_Campo" />
+    <NavigationProperty Name="tbl_Asis_Configurar_Asistencia_Campo" Relationship="Self.FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal" FromRole="tbl_Personal" ToRole="tbl_Asis_Configurar_Asistencia_Campo" />
+    <NavigationProperty Name="tbl_IngresoPersonal" Relationship="Self.FK_tbl_IngresoPersonal_tbl_Personal" FromRole="tbl_Personal" ToRole="tbl_IngresoPersonal" />
+  </EntityType>
+  <EntityType Name="tbl_Usuarios">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="nrodoc_usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos_usuario" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres_usuario" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="email_usuario" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="id_Cargo" Type="Int32" />
+    <Property Name="tipo_usuario" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="fotobinary" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="fotourl" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="login_usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="contrasenia_usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_Perfil" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Delegacion">
+    <Key>
+      <PropertyRef Name="id_delegacion" />
+    </Key>
+    <Property Name="id_delegacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_delegacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Empresa">
+    <Key>
+      <PropertyRef Name="id_empresa" />
+    </Key>
+    <Property Name="id_empresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_creacion" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usuario_edicion" Type="Int32" />
+    <Property Name="fecha_edicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Perfil">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="des_perfil" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia">
+    <End Role="tbl_Asis_TipoAsistencia" Type="Self.tbl_Asis_TipoAsistencia" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_TipoAsistencia">
+        <PropertyRef Name="id_tasi_codigo" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_tasi_codigo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Asis_Turno">
+    <End Role="tbl_Asis_Turno" Type="Self.tbl_Asis_Turno" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_Turno">
+        <PropertyRef Name="id_turno" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_turno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Ges_Local">
+    <End Role="tbl_Ges_Local" Type="Self.tbl_Ges_Local" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_Local">
+        <PropertyRef Name="id_local" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable">
+    <End Role="tbl_Ges_OT_Contable" Type="Self.tbl_Ges_OT_Contable" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_OT_Contable">
+        <PropertyRef Name="id_OtContable" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_OTContable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_Campo_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="1" />
+    <End Role="tbl_Asis_Asistencia_Campo" Type="Self.tbl_Asis_Asistencia_Campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia_Campo">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Configurar_Asistencia_Campo" Type="Self.tbl_Asis_Configurar_Asistencia_Campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Configurar_Asistencia_Campo">
+        <PropertyRef Name="id_Personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas">
+    <End Role="tbl_Asis_GrupoTablas" Type="Self.tbl_Asis_GrupoTablas" Multiplicity="0..1" />
+    <End Role="tbl_Asis_GrupoTablas_Det" Type="Self.tbl_Asis_GrupoTablas_Det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_GrupoTablas">
+        <PropertyRef Name="id_Grupo" />
+      </Principal>
+      <Dependent Role="tbl_Asis_GrupoTablas_Det">
+        <PropertyRef Name="id_Grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Ges_Local">
+    <End Role="tbl_Ges_Local" Type="Self.tbl_Ges_Local" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_Local">
+        <PropertyRef Name="id_local" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1">
+    <End Role="tbl_Ges_OT_Contable" Type="Self.tbl_Ges_OT_Contable" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_OT_Contable">
+        <PropertyRef Name="id_OtContable" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_OTContable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CAM_ControlAsistenciaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_AccesoOpciones" EntityType="Self.tbl_AccesoOpciones" />
+    <EntitySet Name="tbl_Anio" EntityType="Self.tbl_Anio" />
+    <EntitySet Name="tbl_Asis_Asistencia" EntityType="Self.tbl_Asis_Asistencia" />
+    <EntitySet Name="tbl_Asis_Asistencia_Campo" EntityType="Self.tbl_Asis_Asistencia_Campo" />
+    <EntitySet Name="tbl_Asis_Asistencia_Dispositivos" EntityType="Self.tbl_Asis_Asistencia_Dispositivos" />
+    <EntitySet Name="tbl_Asis_Configurar_Asistencia_Campo" EntityType="Self.tbl_Asis_Configurar_Asistencia_Campo" />
+    <EntitySet Name="tbl_Asis_GrupoTablas" EntityType="Self.tbl_Asis_GrupoTablas" />
+    <EntitySet Name="tbl_Asis_GrupoTablas_Det" EntityType="Self.tbl_Asis_GrupoTablas_Det" />
+    <EntitySet Name="tbl_Asis_TipoAsistencia" EntityType="Self.tbl_Asis_TipoAsistencia" />
+    <EntitySet Name="tbl_Asis_Turno" EntityType="Self.tbl_Asis_Turno" />
+    <EntitySet Name="Tbl_Cargo_Personal" EntityType="Self.Tbl_Cargo_Personal" />
+    <EntitySet Name="tbl_Definicion_Opciones" EntityType="Self.tbl_Definicion_Opciones" />
+    <EntitySet Name="TBL_EstadoCelular" EntityType="Self.TBL_EstadoCelular" />
+    <EntitySet Name="tbl_Estados" EntityType="Self.tbl_Estados" />
+    <EntitySet Name="tbl_Ges_Local" EntityType="Self.tbl_Ges_Local" />
+    <EntitySet Name="tbl_Ges_OT_Contable" EntityType="Self.tbl_Ges_OT_Contable" />
+    <EntitySet Name="tbl_Horario_Personal" EntityType="Self.tbl_Horario_Personal" />
+    <EntitySet Name="tbl_IngresoPersonal" EntityType="Self.tbl_IngresoPersonal" />
+    <EntitySet Name="tbl_Mes" EntityType="Self.tbl_Mes" />
+    <EntitySet Name="tbl_Modelo_Asistencia" EntityType="Self.tbl_Modelo_Asistencia" />
+    <EntitySet Name="tbl_Personal" EntityType="Self.tbl_Personal" />
+    <EntitySet Name="tbl_Usuarios" EntityType="Self.tbl_Usuarios" />
+    <EntitySet Name="tbl_Delegacion" EntityType="Self.tbl_Delegacion" />
+    <EntitySet Name="tbl_Empresa" EntityType="Self.tbl_Empresa" />
+    <EntitySet Name="tbl_Perfil" EntityType="Self.tbl_Perfil" />
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia" Association="Self.FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia">
+      <End Role="tbl_Asis_TipoAsistencia" EntitySet="tbl_Asis_TipoAsistencia" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Asis_Turno" Association="Self.FK_tbl_Asis_Asistencia_tbl_Asis_Turno">
+      <End Role="tbl_Asis_Turno" EntitySet="tbl_Asis_Turno" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Ges_Local" Association="Self.FK_tbl_Asis_Asistencia_tbl_Ges_Local">
+      <End Role="tbl_Ges_Local" EntitySet="tbl_Ges_Local" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable" Association="Self.FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable">
+      <End Role="tbl_Ges_OT_Contable" EntitySet="tbl_Ges_OT_Contable" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Personal" Association="Self.FK_tbl_Asis_Asistencia_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_Campo_tbl_Personal" Association="Self.FK_tbl_Asis_Asistencia_Campo_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Asistencia_Campo" EntitySet="tbl_Asis_Asistencia_Campo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal" Association="Self.FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Configurar_Asistencia_Campo" EntitySet="tbl_Asis_Configurar_Asistencia_Campo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas" Association="Self.FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas">
+      <End Role="tbl_Asis_GrupoTablas" EntitySet="tbl_Asis_GrupoTablas" />
+      <End Role="tbl_Asis_GrupoTablas_Det" EntitySet="tbl_Asis_GrupoTablas_Det" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Ges_Local" Association="Self.FK_tbl_IngresoPersonal_tbl_Ges_Local">
+      <End Role="tbl_Ges_Local" EntitySet="tbl_Ges_Local" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1" Association="Self.FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1">
+      <End Role="tbl_Ges_OT_Contable" EntitySet="tbl_Ges_OT_Contable" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Personal" Association="Self.FK_tbl_IngresoPersonal_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

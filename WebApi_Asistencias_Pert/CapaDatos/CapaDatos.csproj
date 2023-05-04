@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5969A225-8555-4394-93D8-B752D4560E63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso\Login.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="EntityAsistencia_Cam.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityAsistencia_Cam.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityAsistencia_Cam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityAsistencia_Cam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityAsistencia_Cam.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Generacion_Archivos\TareoMasivo_E.cs" />
+    <Compile Include="Generacion_Archivos\GenerarTxT_IngresoTrabajador_E.cs" />
+    <Compile Include="Mantenimento\Resultado.cs" />
+    <Compile Include="Proceso\Registro_Produccion_E.cs" />
+    <Compile Include="Proceso\ControlAsistencia_E.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\Reporte_Asistencias_E.cs" />
+    <Compile Include="Reporte\Reporte_ControlAsistenciaCampo_E.cs" />
+    <Compile Include="Reporte\Reporte_LectorHuellas_E.cs" />
+    <Compile Include="Reporte\Reporte_Tareo_Diariol_E.cs" />
+    <Compile Include="Reporte\Reporte_TareoPersonal_E.cs" />
+    <Compile Include="Reporte\Reporte_Produccion_E.cs" />
+    <Compile Include="tbl_AccesoOpciones.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Anio.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_Asistencia.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_Asistencia_Campo.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_Asistencia_Dispositivos.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_Configurar_Asistencia_Campo.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_GrupoTablas.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_GrupoTablas_Det.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_TipoAsistencia.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Asis_Turno.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Cargo_Personal.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Definicion_Opciones.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Delegacion.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Empresa.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBL_EstadoCelular.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Estados.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Ges_Local.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Ges_OT_Contable.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Horario_Personal.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_IngresoPersonal.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Mes.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Modelo_Asistencia.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Perfil.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Personal.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Usuarios.cs">
+      <DependentUpon>EntityAsistencia_Cam.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="EntityAsistencia_Cam.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityAsistencia_Cam.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntityAsistencia_Cam.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityAsistencia_Cam.edmx</DependentUpon>
+      <LastGenOutput>EntityAsistencia_Cam.Context.cs</LastGenOutput>
+    </None>
+    <None Include="EntityAsistencia_Cam.edmx.diagram">
+      <DependentUpon>EntityAsistencia_Cam.edmx</DependentUpon>
+    </None>
+    <None Include="EntityAsistencia_Cam.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityAsistencia_Cam.edmx</DependentUpon>
+      <LastGenOutput>EntityAsistencia_Cam.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

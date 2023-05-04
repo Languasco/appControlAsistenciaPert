@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CAM_ControlAsistenciaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_AccesoOpciones">
+    <Key>
+      <PropertyRef Name="id_RegistroAcceso" />
+    </Key>
+    <Property Name="id_RegistroAcceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="id_opcion" Type="int" />
+    <Property Name="permisos_opciones" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Anio">
+    <Key>
+      <PropertyRef Name="id_anio" />
+    </Key>
+    <Property Name="id_anio" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="descripcion_anio" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia">
+    <Key>
+      <PropertyRef Name="id_asistencia" />
+    </Key>
+    <Property Name="id_asistencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Local" Type="int" />
+    <Property Name="id_OTContable" Type="int" />
+    <Property Name="fecha_asistencia" Type="datetime" />
+    <Property Name="id_turno" Type="int" />
+    <Property Name="id_tasi_codigo" Type="varchar" MaxLength="2" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="horaIngreso_Asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="horaSalida_Asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="total_Asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="horaIngreso_Fijo_asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="horaSalida_Fijo_asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="horatotal_Fijo_asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="horaExtra_asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="totalHoras_Asistencia" Type="varchar" MaxLength="10" />
+    <Property Name="observacion_asistencia" Type="varchar" MaxLength="500" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia_Campo">
+    <Key>
+      <PropertyRef Name="id_asistenciaCampo" />
+    </Key>
+    <Property Name="id_asistenciaCampo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SerieEquipo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="fechaHora_Sincronizacion" Type="datetime" Nullable="false" />
+    <Property Name="fechaHora_asistenciaCampo" Type="datetime" Nullable="false" />
+    <Property Name="id_personal" Type="int" Nullable="false" />
+    <Property Name="id_OtContable" Type="int" Nullable="false" />
+    <Property Name="Latitud_asistenciaCampo" Type="varchar" MaxLength="30" />
+    <Property Name="Longitud_asistenciaCampo" Type="varchar" MaxLength="30" />
+    <Property Name="id_ModoAsistencia" Type="int" />
+    <Property Name="nroObra" Type="varchar" MaxLength="30" />
+    <Property Name="idTurno" Type="int" />
+    <Property Name="fechaHora_Registro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Asistencia_Dispositivos">
+    <Key>
+      <PropertyRef Name="id_asistencia_dispo" />
+    </Key>
+    <Property Name="id_asistencia_dispo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_dispositivo" Type="int" Nullable="false" />
+    <Property Name="USERID" Type="int" Nullable="false" />
+    <Property Name="CHECKTIME" Type="datetime" Nullable="false" />
+    <Property Name="CHECKTYPE" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="VERIFYCODE" Type="int" Nullable="false" />
+    <Property Name="SENSORID" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="LOGID" Type="int" Nullable="false" />
+    <Property Name="MachineId" Type="int" Nullable="false" />
+    <Property Name="UserExtFmt" Type="int" Nullable="false" />
+    <Property Name="WorkCode" Type="int" Nullable="false" />
+    <Property Name="Memoinfo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="sn" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Badgenumber" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Configurar_Asistencia_Campo">
+    <Key>
+      <PropertyRef Name="id_ConfigPersonal" />
+    </Key>
+    <Property Name="id_ConfigPersonal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_OtContable" Type="int" />
+    <Property Name="id_Personal_Coordinador" Type="int" />
+    <Property Name="id_Personal" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" Nullable="false" />
+    <Property Name="fecha_creacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_GrupoTablas">
+    <Key>
+      <PropertyRef Name="id_Grupo" />
+    </Key>
+    <Property Name="id_Grupo" Type="int" Nullable="false" />
+    <Property Name="descripcion_grupo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_GrupoTablas_Det">
+    <Key>
+      <PropertyRef Name="id_grupoDetalle" />
+    </Key>
+    <Property Name="id_grupoDetalle" Type="int" Nullable="false" />
+    <Property Name="id_Grupo" Type="int" />
+    <Property Name="descripcion_grupoDetalle" Type="varchar" MaxLength="100" />
+    <Property Name="abreviatura_grupoDetalle" Type="varchar" MaxLength="30" />
+    <Property Name="orden_grupoDetalle" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_TipoAsistencia">
+    <Key>
+      <PropertyRef Name="id_tasi_codigo" />
+    </Key>
+    <Property Name="id_tasi_codigo" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="descripcion_tasi" Type="varchar" MaxLength="50" />
+    <Property Name="abreviatura_tasi" Type="varchar" MaxLength="30" />
+    <Property Name="valor_tasi" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Asis_Turno">
+    <Key>
+      <PropertyRef Name="id_turno" />
+    </Key>
+    <Property Name="id_turno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_turno" Type="varchar" MaxLength="50" />
+    <Property Name="simbolo_turno" Type="varchar" MaxLength="2" />
+    <Property Name="horaInicio_turno" Type="varchar" MaxLength="5" />
+    <Property Name="horaTermino_turno" Type="varchar" MaxLength="5" />
+    <Property Name="tiempoMaxInicio_turno" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tbl_Cargo_Personal">
+    <Key>
+      <PropertyRef Name="id_Cargo" />
+    </Key>
+    <Property Name="id_Cargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_cargo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Definicion_Opciones">
+    <Key>
+      <PropertyRef Name="id_opcion" />
+    </Key>
+    <Property Name="id_opcion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_opcion" Type="varchar" MaxLength="150" />
+    <Property Name="url_opcion" Type="varchar" MaxLength="150" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="nombreParentID" Type="varchar" MaxLength="150" />
+    <Property Name="urlImagen_Opcion" Type="varchar" MaxLength="150" />
+    <Property Name="orden_Opcion" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CAM_ControlAsistencia.dbo.tbl_Delegacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Delegacion">
+    <Key>
+      <PropertyRef Name="id_delegacion" />
+    </Key>
+    <Property Name="id_delegacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_delegacion" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CAM_ControlAsistencia.dbo.tbl_Empresa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Empresa">
+    <Key>
+      <PropertyRef Name="id_empresa" />
+    </Key>
+    <Property Name="id_empresa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_empresa" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TBL_EstadoCelular">
+    <Key>
+      <PropertyRef Name="id_estadocelular" />
+    </Key>
+    <Property Name="id_estadocelular" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_operario" Type="int" Nullable="false" />
+    <Property Name="GpsActivo" Type="bit" Nullable="false" />
+    <Property Name="estadoBateria" Type="int" Nullable="false" />
+    <Property Name="FechaHoraAndroid" Type="datetime" Nullable="false" />
+    <Property Name="FechaAgregaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="ModoAvion" Type="int" />
+    <Property Name="PlanDatos" Type="bit" />
+    <Property Name="latitud" Type="varchar" MaxLength="20" />
+    <Property Name="longitud" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbl_Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="abreviatura_estado" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion_estado" Type="varchar" MaxLength="150" />
+    <Property Name="tipoproceso_estado" Type="varchar" MaxLength="20" />
+    <Property Name="descripcion_tipoproceso_estado" Type="varchar" MaxLength="150" />
+    <Property Name="id_Modulo" Type="int" />
+    <Property Name="orden_estado" Type="int" />
+    <Property Name="Backcolor_estado" Type="varchar" MaxLength="50" />
+    <Property Name="forecolor_estado" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Ges_Local">
+    <Key>
+      <PropertyRef Name="id_local" />
+    </Key>
+    <Property Name="id_local" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_local" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Ges_OT_Contable">
+    <Key>
+      <PropertyRef Name="id_OtContable" />
+    </Key>
+    <Property Name="id_OtContable" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Empresa" Type="int" />
+    <Property Name="id_Delegacion" Type="int" Nullable="false" />
+    <Property Name="codigo_OTContable" Type="varchar" MaxLength="20" />
+    <Property Name="descripcion_OTContable" Type="varchar" MaxLength="150" />
+    <Property Name="tipo_OTContable" Type="varchar" MaxLength="2" />
+    <Property Name="fechaApertura_OTContable" Type="datetime" />
+    <Property Name="fechaBaja_OTContable" Type="datetime" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Horario_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+    </Key>
+    <Property Name="id_personal" Type="int" Nullable="false" />
+    <Property Name="lunes_I" Type="varchar" MaxLength="10" />
+    <Property Name="lunes_S" Type="varchar" MaxLength="10" />
+    <Property Name="Martes_I" Type="varchar" MaxLength="10" />
+    <Property Name="Martes_S" Type="varchar" MaxLength="10" />
+    <Property Name="Miercoles_I" Type="varchar" MaxLength="10" />
+    <Property Name="Miercoles_S" Type="varchar" MaxLength="10" />
+    <Property Name="Jueves_I" Type="varchar" MaxLength="10" />
+    <Property Name="Jueves_S" Type="varchar" MaxLength="10" />
+    <Property Name="Viernes_I" Type="varchar" MaxLength="10" />
+    <Property Name="Viernes_S" Type="varchar" MaxLength="10" />
+    <Property Name="Sabado_I" Type="varchar" MaxLength="10" />
+    <Property Name="Sabado_S" Type="varchar" MaxLength="10" />
+    <Property Name="Domingo_I" Type="varchar" MaxLength="10" />
+    <Property Name="Domingo_S" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbl_IngresoPersonal">
+    <Key>
+      <PropertyRef Name="id_Ingreso" />
+    </Key>
+    <Property Name="id_Ingreso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_Local" Type="int" />
+    <Property Name="id_OTContable" Type="int" />
+    <Property Name="id_Personal_Responsable" Type="int" />
+    <Property Name="id_personal" Type="int" />
+    <Property Name="ImporteProduccion_Ingreso" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="obsProduccion_Ingreso" Type="varchar" MaxLength="250" />
+    <Property Name="ImporteMovilidad_Ingreso" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="obsMovilidad_Ingreso" Type="varchar" MaxLength="250" />
+    <Property Name="fecha_ingreso" Type="datetime" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Mes">
+    <Key>
+      <PropertyRef Name="id_mes" />
+    </Key>
+    <Property Name="id_mes" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="descripcion_mes" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbl_Modelo_Asistencia">
+    <Key>
+      <PropertyRef Name="id_ModeloAsistencia" />
+    </Key>
+    <Property Name="id_ModeloAsistencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_ModeloAsistencia" Type="varchar" MaxLength="50" />
+    <Property Name="CampoAdicional" Type="varchar" MaxLength="10" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CAM_ControlAsistencia.dbo.tbl_Perfil' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tbl_Perfil">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="des_perfil" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Personal">
+    <Key>
+      <PropertyRef Name="id_personal" />
+    </Key>
+    <Property Name="id_personal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo_personal" Type="varchar" MaxLength="20" />
+    <Property Name="id_OtContable" Type="int" />
+    <Property Name="nroDoc_personal" Type="varchar" MaxLength="20" />
+    <Property Name="tipoDoc_personal" Type="varchar" MaxLength="5" />
+    <Property Name="apellidos_personal" Type="varchar" MaxLength="150" />
+    <Property Name="nombres_personal" Type="varchar" MaxLength="150" />
+    <Property Name="tip_personal" Type="int" />
+    <Property Name="id_cargo_personal" Type="int" />
+    <Property Name="fotoUrl_personal" Type="varchar" MaxLength="150" />
+    <Property Name="nroCelular_personal" Type="varchar" MaxLength="30" />
+    <Property Name="email_personal" Type="varchar" MaxLength="100" />
+    <Property Name="nombreUsario_personal" Type="varchar" MaxLength="50" />
+    <Property Name="contrasenia_personal" Type="varchar" MaxLength="30" />
+    <Property Name="envio_enlinea_personal" Type="varchar" MaxLength="2" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="fecha_cese" Type="datetime" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+    <Property Name="huella1_personal" Type="nvarchar(max)" />
+    <Property Name="huella2_personal" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Usuarios">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="int" Nullable="false" />
+    <Property Name="nrodoc_usuario" Type="varchar" MaxLength="20" />
+    <Property Name="apellidos_usuario" Type="varchar" MaxLength="150" />
+    <Property Name="nombres_usuario" Type="varchar" MaxLength="150" />
+    <Property Name="email_usuario" Type="varchar" MaxLength="150" />
+    <Property Name="id_Cargo" Type="int" />
+    <Property Name="tipo_usuario" Type="varchar" MaxLength="2" />
+    <Property Name="fotobinary" Type="image" />
+    <Property Name="fotourl" Type="varchar" MaxLength="150" />
+    <Property Name="login_usuario" Type="varchar" MaxLength="100" />
+    <Property Name="contrasenia_usuario" Type="varchar" MaxLength="50" />
+    <Property Name="id_Perfil" Type="int" />
+    <Property Name="estado" Type="int" />
+    <Property Name="usuario_creacion" Type="int" />
+    <Property Name="fecha_creacion" Type="datetime" />
+    <Property Name="usuario_edicion" Type="int" />
+    <Property Name="fecha_edicion" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_tbl_Asis_Asistencia_Campo_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="1" />
+    <End Role="tbl_Asis_Asistencia_Campo" Type="Self.tbl_Asis_Asistencia_Campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia_Campo">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia">
+    <End Role="tbl_Asis_TipoAsistencia" Type="Self.tbl_Asis_TipoAsistencia" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_TipoAsistencia">
+        <PropertyRef Name="id_tasi_codigo" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_tasi_codigo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Asis_Turno">
+    <End Role="tbl_Asis_Turno" Type="Self.tbl_Asis_Turno" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_Turno">
+        <PropertyRef Name="id_turno" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_turno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Ges_Local">
+    <End Role="tbl_Ges_Local" Type="Self.tbl_Ges_Local" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_Local">
+        <PropertyRef Name="id_local" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable">
+    <End Role="tbl_Ges_OT_Contable" Type="Self.tbl_Ges_OT_Contable" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_OT_Contable">
+        <PropertyRef Name="id_OtContable" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_OTContable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Asistencia_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Asistencia" Type="Self.tbl_Asis_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Asistencia">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_Asis_Configurar_Asistencia_Campo" Type="Self.tbl_Asis_Configurar_Asistencia_Campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_Asis_Configurar_Asistencia_Campo">
+        <PropertyRef Name="id_Personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas">
+    <End Role="tbl_Asis_GrupoTablas" Type="Self.tbl_Asis_GrupoTablas" Multiplicity="0..1" />
+    <End Role="tbl_Asis_GrupoTablas_Det" Type="Self.tbl_Asis_GrupoTablas_Det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Asis_GrupoTablas">
+        <PropertyRef Name="id_Grupo" />
+      </Principal>
+      <Dependent Role="tbl_Asis_GrupoTablas_Det">
+        <PropertyRef Name="id_Grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Ges_Local">
+    <End Role="tbl_Ges_Local" Type="Self.tbl_Ges_Local" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_Local">
+        <PropertyRef Name="id_local" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1">
+    <End Role="tbl_Ges_OT_Contable" Type="Self.tbl_Ges_OT_Contable" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Ges_OT_Contable">
+        <PropertyRef Name="id_OtContable" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_OTContable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_IngresoPersonal_tbl_Personal">
+    <End Role="tbl_Personal" Type="Self.tbl_Personal" Multiplicity="0..1" />
+    <End Role="tbl_IngresoPersonal" Type="Self.tbl_IngresoPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Personal">
+        <PropertyRef Name="id_personal" />
+      </Principal>
+      <Dependent Role="tbl_IngresoPersonal">
+        <PropertyRef Name="id_personal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CAM_ControlAsistenciaModelStoreContainer">
+    <EntitySet Name="tbl_AccesoOpciones" EntityType="Self.tbl_AccesoOpciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Anio" EntityType="Self.tbl_Anio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_Asistencia" EntityType="Self.tbl_Asis_Asistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_Asistencia_Campo" EntityType="Self.tbl_Asis_Asistencia_Campo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_Asistencia_Dispositivos" EntityType="Self.tbl_Asis_Asistencia_Dispositivos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_Configurar_Asistencia_Campo" EntityType="Self.tbl_Asis_Configurar_Asistencia_Campo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_GrupoTablas" EntityType="Self.tbl_Asis_GrupoTablas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_GrupoTablas_Det" EntityType="Self.tbl_Asis_GrupoTablas_Det" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_TipoAsistencia" EntityType="Self.tbl_Asis_TipoAsistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asis_Turno" EntityType="Self.tbl_Asis_Turno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Cargo_Personal" EntityType="Self.Tbl_Cargo_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Definicion_Opciones" EntityType="Self.tbl_Definicion_Opciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_EstadoCelular" EntityType="Self.TBL_EstadoCelular" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Estados" EntityType="Self.tbl_Estados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Ges_Local" EntityType="Self.tbl_Ges_Local" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Ges_OT_Contable" EntityType="Self.tbl_Ges_OT_Contable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Horario_Personal" EntityType="Self.tbl_Horario_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_IngresoPersonal" EntityType="Self.tbl_IngresoPersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Mes" EntityType="Self.tbl_Mes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Modelo_Asistencia" EntityType="Self.tbl_Modelo_Asistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personal" EntityType="Self.tbl_Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Usuarios" EntityType="Self.tbl_Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Delegacion" EntityType="Self.tbl_Delegacion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Delegacion].[id_delegacion] AS [id_delegacion], 
+    [tbl_Delegacion].[nombre_delegacion] AS [nombre_delegacion], 
+    [tbl_Delegacion].[estado] AS [estado], 
+    [tbl_Delegacion].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_Delegacion].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_Delegacion].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_Delegacion].[fecha_edicion] AS [fecha_edicion]
+    FROM [dbo].[tbl_Delegacion] AS [tbl_Delegacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Empresa" EntityType="Self.tbl_Empresa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Empresa].[id_empresa] AS [id_empresa], 
+    [tbl_Empresa].[nombre_empresa] AS [nombre_empresa], 
+    [tbl_Empresa].[estado] AS [estado], 
+    [tbl_Empresa].[usuario_creacion] AS [usuario_creacion], 
+    [tbl_Empresa].[fecha_creacion] AS [fecha_creacion], 
+    [tbl_Empresa].[usuario_edicion] AS [usuario_edicion], 
+    [tbl_Empresa].[fecha_edicion] AS [fecha_edicion]
+    FROM [dbo].[tbl_Empresa] AS [tbl_Empresa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Perfil" EntityType="Self.tbl_Perfil" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Perfil].[id_perfil] AS [id_perfil], 
+    [tbl_Perfil].[des_perfil] AS [des_perfil], 
+    [tbl_Perfil].[estado] AS [estado], 
+    [tbl_Perfil].[fecha_creacion] AS [fecha_creacion]
+    FROM [dbo].[tbl_Perfil] AS [tbl_Perfil]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_Campo_tbl_Personal" Association="Self.FK_tbl_Asis_Asistencia_Campo_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Asistencia_Campo" EntitySet="tbl_Asis_Asistencia_Campo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia" Association="Self.FK_tbl_Asis_Asistencia_tbl_Asis_TipoAsistencia">
+      <End Role="tbl_Asis_TipoAsistencia" EntitySet="tbl_Asis_TipoAsistencia" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Asis_Turno" Association="Self.FK_tbl_Asis_Asistencia_tbl_Asis_Turno">
+      <End Role="tbl_Asis_Turno" EntitySet="tbl_Asis_Turno" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Ges_Local" Association="Self.FK_tbl_Asis_Asistencia_tbl_Ges_Local">
+      <End Role="tbl_Ges_Local" EntitySet="tbl_Ges_Local" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable" Association="Self.FK_tbl_Asis_Asistencia_tbl_Ges_OT_Contable">
+      <End Role="tbl_Ges_OT_Contable" EntitySet="tbl_Ges_OT_Contable" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Asistencia_tbl_Personal" Association="Self.FK_tbl_Asis_Asistencia_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Asistencia" EntitySet="tbl_Asis_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal" Association="Self.FK_tbl_Asis_Configurar_Asistencia_Campo_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_Asis_Configurar_Asistencia_Campo" EntitySet="tbl_Asis_Configurar_Asistencia_Campo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas" Association="Self.FK_tbl_Asis_GrupoTablas_Det_tbl_Asis_GrupoTablas">
+      <End Role="tbl_Asis_GrupoTablas" EntitySet="tbl_Asis_GrupoTablas" />
+      <End Role="tbl_Asis_GrupoTablas_Det" EntitySet="tbl_Asis_GrupoTablas_Det" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Ges_Local" Association="Self.FK_tbl_IngresoPersonal_tbl_Ges_Local">
+      <End Role="tbl_Ges_Local" EntitySet="tbl_Ges_Local" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1" Association="Self.FK_tbl_IngresoPersonal_tbl_Ges_OT_Contable1">
+      <End Role="tbl_Ges_OT_Contable" EntitySet="tbl_Ges_OT_Contable" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_IngresoPersonal_tbl_Personal" Association="Self.FK_tbl_IngresoPersonal_tbl_Personal">
+      <End Role="tbl_Personal" EntitySet="tbl_Personal" />
+      <End Role="tbl_IngresoPersonal" EntitySet="tbl_IngresoPersonal" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

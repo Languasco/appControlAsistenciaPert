@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CAM_ControlAsistenciaModelStoreContainer" CdmEntityContainer="CAM_ControlAsistenciaEntities">
+    <EntitySetMapping Name="tbl_AccesoOpciones">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_AccesoOpciones">
+        <MappingFragment StoreEntitySet="tbl_AccesoOpciones">
+          <ScalarProperty Name="id_RegistroAcceso" ColumnName="id_RegistroAcceso" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+          <ScalarProperty Name="permisos_opciones" ColumnName="permisos_opciones" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Anio">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Anio">
+        <MappingFragment StoreEntitySet="tbl_Anio">
+          <ScalarProperty Name="id_anio" ColumnName="id_anio" />
+          <ScalarProperty Name="descripcion_anio" ColumnName="descripcion_anio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_Asistencia">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia">
+        <MappingFragment StoreEntitySet="tbl_Asis_Asistencia">
+          <ScalarProperty Name="id_asistencia" ColumnName="id_asistencia" />
+          <ScalarProperty Name="id_Local" ColumnName="id_Local" />
+          <ScalarProperty Name="id_OTContable" ColumnName="id_OTContable" />
+          <ScalarProperty Name="fecha_asistencia" ColumnName="fecha_asistencia" />
+          <ScalarProperty Name="id_turno" ColumnName="id_turno" />
+          <ScalarProperty Name="id_tasi_codigo" ColumnName="id_tasi_codigo" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="horaIngreso_Asistencia" ColumnName="horaIngreso_Asistencia" />
+          <ScalarProperty Name="horaSalida_Asistencia" ColumnName="horaSalida_Asistencia" />
+          <ScalarProperty Name="total_Asistencia" ColumnName="total_Asistencia" />
+          <ScalarProperty Name="horaIngreso_Fijo_asistencia" ColumnName="horaIngreso_Fijo_asistencia" />
+          <ScalarProperty Name="horaSalida_Fijo_asistencia" ColumnName="horaSalida_Fijo_asistencia" />
+          <ScalarProperty Name="horatotal_Fijo_asistencia" ColumnName="horatotal_Fijo_asistencia" />
+          <ScalarProperty Name="horaExtra_asistencia" ColumnName="horaExtra_asistencia" />
+          <ScalarProperty Name="totalHoras_Asistencia" ColumnName="totalHoras_Asistencia" />
+          <ScalarProperty Name="observacion_asistencia" ColumnName="observacion_asistencia" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_Asistencia_Campo">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia_Campo">
+        <MappingFragment StoreEntitySet="tbl_Asis_Asistencia_Campo">
+          <ScalarProperty Name="id_asistenciaCampo" ColumnName="id_asistenciaCampo" />
+          <ScalarProperty Name="SerieEquipo" ColumnName="SerieEquipo" />
+          <ScalarProperty Name="fechaHora_Sincronizacion" ColumnName="fechaHora_Sincronizacion" />
+          <ScalarProperty Name="fechaHora_asistenciaCampo" ColumnName="fechaHora_asistenciaCampo" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="id_OtContable" ColumnName="id_OtContable" />
+          <ScalarProperty Name="Latitud_asistenciaCampo" ColumnName="Latitud_asistenciaCampo" />
+          <ScalarProperty Name="Longitud_asistenciaCampo" ColumnName="Longitud_asistenciaCampo" />
+          <ScalarProperty Name="id_ModoAsistencia" ColumnName="id_ModoAsistencia" />
+          <ScalarProperty Name="nroObra" ColumnName="nroObra" />
+          <ScalarProperty Name="idTurno" ColumnName="idTurno" />
+          <ScalarProperty Name="fechaHora_Registro" ColumnName="fechaHora_Registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_Asistencia_Dispositivos">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_Asistencia_Dispositivos">
+        <MappingFragment StoreEntitySet="tbl_Asis_Asistencia_Dispositivos">
+          <ScalarProperty Name="id_asistencia_dispo" ColumnName="id_asistencia_dispo" />
+          <ScalarProperty Name="id_dispositivo" ColumnName="id_dispositivo" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CHECKTIME" ColumnName="CHECKTIME" />
+          <ScalarProperty Name="CHECKTYPE" ColumnName="CHECKTYPE" />
+          <ScalarProperty Name="VERIFYCODE" ColumnName="VERIFYCODE" />
+          <ScalarProperty Name="SENSORID" ColumnName="SENSORID" />
+          <ScalarProperty Name="LOGID" ColumnName="LOGID" />
+          <ScalarProperty Name="MachineId" ColumnName="MachineId" />
+          <ScalarProperty Name="UserExtFmt" ColumnName="UserExtFmt" />
+          <ScalarProperty Name="WorkCode" ColumnName="WorkCode" />
+          <ScalarProperty Name="Memoinfo" ColumnName="Memoinfo" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="Badgenumber" ColumnName="Badgenumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_Configurar_Asistencia_Campo">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_Configurar_Asistencia_Campo">
+        <MappingFragment StoreEntitySet="tbl_Asis_Configurar_Asistencia_Campo">
+          <ScalarProperty Name="id_ConfigPersonal" ColumnName="id_ConfigPersonal" />
+          <ScalarProperty Name="id_OtContable" ColumnName="id_OtContable" />
+          <ScalarProperty Name="id_Personal_Coordinador" ColumnName="id_Personal_Coordinador" />
+          <ScalarProperty Name="id_Personal" ColumnName="id_Personal" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_GrupoTablas">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_GrupoTablas">
+        <MappingFragment StoreEntitySet="tbl_Asis_GrupoTablas">
+          <ScalarProperty Name="id_Grupo" ColumnName="id_Grupo" />
+          <ScalarProperty Name="descripcion_grupo" ColumnName="descripcion_grupo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_GrupoTablas_Det">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_GrupoTablas_Det">
+        <MappingFragment StoreEntitySet="tbl_Asis_GrupoTablas_Det">
+          <ScalarProperty Name="id_grupoDetalle" ColumnName="id_grupoDetalle" />
+          <ScalarProperty Name="id_Grupo" ColumnName="id_Grupo" />
+          <ScalarProperty Name="descripcion_grupoDetalle" ColumnName="descripcion_grupoDetalle" />
+          <ScalarProperty Name="abreviatura_grupoDetalle" ColumnName="abreviatura_grupoDetalle" />
+          <ScalarProperty Name="orden_grupoDetalle" ColumnName="orden_grupoDetalle" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_TipoAsistencia">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_TipoAsistencia">
+        <MappingFragment StoreEntitySet="tbl_Asis_TipoAsistencia">
+          <ScalarProperty Name="id_tasi_codigo" ColumnName="id_tasi_codigo" />
+          <ScalarProperty Name="descripcion_tasi" ColumnName="descripcion_tasi" />
+          <ScalarProperty Name="abreviatura_tasi" ColumnName="abreviatura_tasi" />
+          <ScalarProperty Name="valor_tasi" ColumnName="valor_tasi" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asis_Turno">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Asis_Turno">
+        <MappingFragment StoreEntitySet="tbl_Asis_Turno">
+          <ScalarProperty Name="id_turno" ColumnName="id_turno" />
+          <ScalarProperty Name="nombre_turno" ColumnName="nombre_turno" />
+          <ScalarProperty Name="simbolo_turno" ColumnName="simbolo_turno" />
+          <ScalarProperty Name="horaInicio_turno" ColumnName="horaInicio_turno" />
+          <ScalarProperty Name="horaTermino_turno" ColumnName="horaTermino_turno" />
+          <ScalarProperty Name="tiempoMaxInicio_turno" ColumnName="tiempoMaxInicio_turno" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Cargo_Personal">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.Tbl_Cargo_Personal">
+        <MappingFragment StoreEntitySet="Tbl_Cargo_Personal">
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="nombre_cargo" ColumnName="nombre_cargo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Definicion_Opciones">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Definicion_Opciones">
+        <MappingFragment StoreEntitySet="tbl_Definicion_Opciones">
+          <ScalarProperty Name="id_opcion" ColumnName="id_opcion" />
+          <ScalarProperty Name="nombre_opcion" ColumnName="nombre_opcion" />
+          <ScalarProperty Name="url_opcion" ColumnName="url_opcion" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="nombreParentID" ColumnName="nombreParentID" />
+          <ScalarProperty Name="urlImagen_Opcion" ColumnName="urlImagen_Opcion" />
+          <ScalarProperty Name="orden_Opcion" ColumnName="orden_Opcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_EstadoCelular">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.TBL_EstadoCelular">
+        <MappingFragment StoreEntitySet="TBL_EstadoCelular">
+          <ScalarProperty Name="id_estadocelular" ColumnName="id_estadocelular" />
+          <ScalarProperty Name="id_operario" ColumnName="id_operario" />
+          <ScalarProperty Name="GpsActivo" ColumnName="GpsActivo" />
+          <ScalarProperty Name="estadoBateria" ColumnName="estadoBateria" />
+          <ScalarProperty Name="FechaHoraAndroid" ColumnName="FechaHoraAndroid" />
+          <ScalarProperty Name="FechaAgregaRegistro" ColumnName="FechaAgregaRegistro" />
+          <ScalarProperty Name="ModoAvion" ColumnName="ModoAvion" />
+          <ScalarProperty Name="PlanDatos" ColumnName="PlanDatos" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Estados">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Estados">
+        <MappingFragment StoreEntitySet="tbl_Estados">
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="abreviatura_estado" ColumnName="abreviatura_estado" />
+          <ScalarProperty Name="descripcion_estado" ColumnName="descripcion_estado" />
+          <ScalarProperty Name="tipoproceso_estado" ColumnName="tipoproceso_estado" />
+          <ScalarProperty Name="descripcion_tipoproceso_estado" ColumnName="descripcion_tipoproceso_estado" />
+          <ScalarProperty Name="id_Modulo" ColumnName="id_Modulo" />
+          <ScalarProperty Name="orden_estado" ColumnName="orden_estado" />
+          <ScalarProperty Name="Backcolor_estado" ColumnName="Backcolor_estado" />
+          <ScalarProperty Name="forecolor_estado" ColumnName="forecolor_estado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Ges_Local">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Ges_Local">
+        <MappingFragment StoreEntitySet="tbl_Ges_Local">
+          <ScalarProperty Name="id_local" ColumnName="id_local" />
+          <ScalarProperty Name="nombre_local" ColumnName="nombre_local" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Ges_OT_Contable">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Ges_OT_Contable">
+        <MappingFragment StoreEntitySet="tbl_Ges_OT_Contable">
+          <ScalarProperty Name="id_OtContable" ColumnName="id_OtContable" />
+          <ScalarProperty Name="id_Empresa" ColumnName="id_Empresa" />
+          <ScalarProperty Name="id_Delegacion" ColumnName="id_Delegacion" />
+          <ScalarProperty Name="codigo_OTContable" ColumnName="codigo_OTContable" />
+          <ScalarProperty Name="descripcion_OTContable" ColumnName="descripcion_OTContable" />
+          <ScalarProperty Name="tipo_OTContable" ColumnName="tipo_OTContable" />
+          <ScalarProperty Name="fechaApertura_OTContable" ColumnName="fechaApertura_OTContable" />
+          <ScalarProperty Name="fechaBaja_OTContable" ColumnName="fechaBaja_OTContable" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Horario_Personal">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Horario_Personal">
+        <MappingFragment StoreEntitySet="tbl_Horario_Personal">
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="lunes_I" ColumnName="lunes_I" />
+          <ScalarProperty Name="lunes_S" ColumnName="lunes_S" />
+          <ScalarProperty Name="Martes_I" ColumnName="Martes_I" />
+          <ScalarProperty Name="Martes_S" ColumnName="Martes_S" />
+          <ScalarProperty Name="Miercoles_I" ColumnName="Miercoles_I" />
+          <ScalarProperty Name="Miercoles_S" ColumnName="Miercoles_S" />
+          <ScalarProperty Name="Jueves_I" ColumnName="Jueves_I" />
+          <ScalarProperty Name="Jueves_S" ColumnName="Jueves_S" />
+          <ScalarProperty Name="Viernes_I" ColumnName="Viernes_I" />
+          <ScalarProperty Name="Viernes_S" ColumnName="Viernes_S" />
+          <ScalarProperty Name="Sabado_I" ColumnName="Sabado_I" />
+          <ScalarProperty Name="Sabado_S" ColumnName="Sabado_S" />
+          <ScalarProperty Name="Domingo_I" ColumnName="Domingo_I" />
+          <ScalarProperty Name="Domingo_S" ColumnName="Domingo_S" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IngresoPersonal">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_IngresoPersonal">
+        <MappingFragment StoreEntitySet="tbl_IngresoPersonal">
+          <ScalarProperty Name="id_Ingreso" ColumnName="id_Ingreso" />
+          <ScalarProperty Name="id_Local" ColumnName="id_Local" />
+          <ScalarProperty Name="id_OTContable" ColumnName="id_OTContable" />
+          <ScalarProperty Name="id_Personal_Responsable" ColumnName="id_Personal_Responsable" />
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="ImporteProduccion_Ingreso" ColumnName="ImporteProduccion_Ingreso" />
+          <ScalarProperty Name="obsProduccion_Ingreso" ColumnName="obsProduccion_Ingreso" />
+          <ScalarProperty Name="ImporteMovilidad_Ingreso" ColumnName="ImporteMovilidad_Ingreso" />
+          <ScalarProperty Name="obsMovilidad_Ingreso" ColumnName="obsMovilidad_Ingreso" />
+          <ScalarProperty Name="fecha_ingreso" ColumnName="fecha_ingreso" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Mes">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Mes">
+        <MappingFragment StoreEntitySet="tbl_Mes">
+          <ScalarProperty Name="id_mes" ColumnName="id_mes" />
+          <ScalarProperty Name="descripcion_mes" ColumnName="descripcion_mes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Modelo_Asistencia">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Modelo_Asistencia">
+        <MappingFragment StoreEntitySet="tbl_Modelo_Asistencia">
+          <ScalarProperty Name="id_ModeloAsistencia" ColumnName="id_ModeloAsistencia" />
+          <ScalarProperty Name="nombre_ModeloAsistencia" ColumnName="nombre_ModeloAsistencia" />
+          <ScalarProperty Name="CampoAdicional" ColumnName="CampoAdicional" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Personal">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Personal">
+        <MappingFragment StoreEntitySet="tbl_Personal">
+          <ScalarProperty Name="id_personal" ColumnName="id_personal" />
+          <ScalarProperty Name="codigo_personal" ColumnName="codigo_personal" />
+          <ScalarProperty Name="id_OtContable" ColumnName="id_OtContable" />
+          <ScalarProperty Name="nroDoc_personal" ColumnName="nroDoc_personal" />
+          <ScalarProperty Name="tipoDoc_personal" ColumnName="tipoDoc_personal" />
+          <ScalarProperty Name="apellidos_personal" ColumnName="apellidos_personal" />
+          <ScalarProperty Name="nombres_personal" ColumnName="nombres_personal" />
+          <ScalarProperty Name="tip_personal" ColumnName="tip_personal" />
+          <ScalarProperty Name="id_cargo_personal" ColumnName="id_cargo_personal" />
+          <ScalarProperty Name="fotoUrl_personal" ColumnName="fotoUrl_personal" />
+          <ScalarProperty Name="nroCelular_personal" ColumnName="nroCelular_personal" />
+          <ScalarProperty Name="email_personal" ColumnName="email_personal" />
+          <ScalarProperty Name="nombreUsario_personal" ColumnName="nombreUsario_personal" />
+          <ScalarProperty Name="contrasenia_personal" ColumnName="contrasenia_personal" />
+          <ScalarProperty Name="envio_enlinea_personal" ColumnName="envio_enlinea_personal" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="fecha_cese" ColumnName="fecha_cese" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+          <ScalarProperty Name="huella1_personal" ColumnName="huella1_personal" />
+          <ScalarProperty Name="huella2_personal" ColumnName="huella2_personal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Usuarios">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Usuarios">
+        <MappingFragment StoreEntitySet="tbl_Usuarios">
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+          <ScalarProperty Name="nrodoc_usuario" ColumnName="nrodoc_usuario" />
+          <ScalarProperty Name="apellidos_usuario" ColumnName="apellidos_usuario" />
+          <ScalarProperty Name="nombres_usuario" ColumnName="nombres_usuario" />
+          <ScalarProperty Name="email_usuario" ColumnName="email_usuario" />
+          <ScalarProperty Name="id_Cargo" ColumnName="id_Cargo" />
+          <ScalarProperty Name="tipo_usuario" ColumnName="tipo_usuario" />
+          <ScalarProperty Name="fotobinary" ColumnName="fotobinary" />
+          <ScalarProperty Name="fotourl" ColumnName="fotourl" />
+          <ScalarProperty Name="login_usuario" ColumnName="login_usuario" />
+          <ScalarProperty Name="contrasenia_usuario" ColumnName="contrasenia_usuario" />
+          <ScalarProperty Name="id_Perfil" ColumnName="id_Perfil" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Delegacion">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Delegacion">
+        <MappingFragment StoreEntitySet="tbl_Delegacion">
+          <ScalarProperty Name="id_delegacion" ColumnName="id_delegacion" />
+          <ScalarProperty Name="nombre_delegacion" ColumnName="nombre_delegacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Empresa">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Empresa">
+        <MappingFragment StoreEntitySet="tbl_Empresa">
+          <ScalarProperty Name="id_empresa" ColumnName="id_empresa" />
+          <ScalarProperty Name="nombre_empresa" ColumnName="nombre_empresa" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_creacion" ColumnName="usuario_creacion" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+          <ScalarProperty Name="usuario_edicion" ColumnName="usuario_edicion" />
+          <ScalarProperty Name="fecha_edicion" ColumnName="fecha_edicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Perfil">
+      <EntityTypeMapping TypeName="CAM_ControlAsistenciaModel.tbl_Perfil">
+        <MappingFragment StoreEntitySet="tbl_Perfil">
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="des_perfil" ColumnName="des_perfil" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fecha_creacion" ColumnName="fecha_creacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

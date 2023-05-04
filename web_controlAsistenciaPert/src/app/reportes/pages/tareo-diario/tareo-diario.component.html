@@ -1,0 +1,84 @@
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> REPORTE TAREO DIARIO </h5>
+    </div>
+    <div class="card-body">
+
+        <form [formGroup]="formParamsFiltro">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <label> Locales</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_local">
+                        <option value="0"> [ -- SELECCIONE-- ]</option>
+                        <option [value]="item.id_local" *ngFor="let item of locales">   {{item.nombre_local   | uppercase }}  </option>
+                    </select>     
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <label> Ot Contable</label>
+                    <br>     
+                    <select id="cboPersonal" class="form-control comboBox" formControlName="id_OT_contable">
+                        <option value="0"> [ -- TODOS-- ]</option>
+                        <option [value]="item.id_OtContable" *ngFor="let item of listaContables">   {{item.descripcion_OTContable   | uppercase}}  </option>
+                    </select> 
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <label class="control-label"> Fecha   </label>
+                    <div class="input-group">
+                        <input class="form-control" #datepickerYMD="bsDatepicker" bsDatepicker formControlName="fecha"  [bsConfig]="datepiekerConfig">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="mt-4 text-center">
+                        <button class="btn  btn-sm  btn-primary" (click)="mostrarInformacion()"  title="Mostrar la informacion">   <i class="fas fa-search"> Mostrar</i> </button>
+                        <button class="btn btn-sm btn-success ml-1" (click)="descargarReporte()">  <i class="fas fa-file-download">  </i> Descargar </button>
+                    </div>   
+                </div>
+            </div>
+        </form> 
+
+        <br>
+ 
+            
+        <div class="d-flex justify-content-between">
+            <div class="p-2 bd-highlight">
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm  resaltarTexto" placeholder="Auto busquedas" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+
+            </div>
+            <div class="p-2 bd-highlight">               
+            </div>
+        </div>
+
+        <div class="tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+                    <tr>
+                        <th>#</th>
+                        <th style="text-align:left">FECHA</th>
+                        <th style="text-align:left">DNI</th>
+                        <th style="text-align:left">PERSONAL</th>
+                        <th style="text-align:center">TIPO ASISTENCIA</th>
+                        <th style="text-align:center">HORA ENTRADA</th>
+                        <th style="text-align:center">HORA SALIDA</th>
+                        <th style="text-align:center">TOTAL HORAS</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listaTareos  |  filter : filtrarMantenimiento ; index as j"  >
+                        <td scope="row"> {{j + 1}} </td>
+                        <td>{{item.Fecha}}</td>
+                        <td style="text-align:left">{{item.dni}}</td>
+                        <td style="text-align:left">{{item.personal}}</td>
+                        <td style="text-align:center">{{item.id_tasi_codigo}}</td>
+                        <td style="text-align:center">{{item.horaIngreso_Asistencia}}</td>
+                        <td style="text-align:center">{{item.horaSalida_Asistencia}}</td>
+                        <td style="text-align:center">{{item.total_Asistencia}}</td>                    
+                     </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

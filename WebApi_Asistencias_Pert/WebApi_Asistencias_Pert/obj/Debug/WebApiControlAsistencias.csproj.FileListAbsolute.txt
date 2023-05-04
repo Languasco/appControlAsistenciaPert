@@ -1,0 +1,286 @@
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll.config
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Web.Infrastructure.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Owin.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Cors.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebGrease.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.xml
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Net.Http.Formatting.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Helpers.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.WebHost.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Mvc.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Optimization.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Razor.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.Owin.resources.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.dll
+c:\users\usuario\documents\visual studio 2013\Projects\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll.config
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Cors.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebGrease.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EPPlus.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.pdb
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EPPlus.xml
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Helpers.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Mvc.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Optimization.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Razor.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.dll
+C:\Users\PC\Desktop\Git_Proyectos\ProyectoControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll.config
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebApiControlAsistencias.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Cors.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\WebGrease.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EPPlus.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaDatos.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\CapaNegocios.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Cors.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Helpers.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Mvc.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Optimization.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Razor.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.WebPages.Razor.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Antlr3.Runtime.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\System.Web.Http.Owin.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\EPPlus.xml
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Helpers.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Mvc.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Optimization.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Razor.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\bin\es\System.Web.Http.Owin.resources.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaControlAsistencias\WebApiControlAsistencias\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.pdb
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.dll
+C:\Users\PC\Desktop\Git_Proyectos\SistemaAsistenciasCam\WebApiAsistenciasCam\WebApiControlAsistencias\obj\Debug\WebApiControlAsistencias.pdb

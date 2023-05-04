@@ -1,0 +1,167 @@
+<div class="card border-left-warning  shadow mt-2   ">
+    <div class="card-header">
+        <h5 class="headerTitle"> MANTENIMIENTO HORARIO</h5>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-between" style=" margin-top: -15px;">
+            <div class="p-1 bd-highlight">
+                <!-- <button class="btn btn-warning" (click)="nuevo()" style="font-size: 13px;">  <i class="fa fa-plus-circle"> </i> Nuevo </button> -->
+                <img src="./assets/img/nuevo.png" class="puntero " tooltip="Nuevo" (click)="nuevo()">
+            </div>
+            <div class="p-2 bd-highlight" style="width: 50%;">
+                <input type="text" class="form-control form-control-sm " placeholder="Buscar" maxlength="50" [(ngModel)]="filtrarMantenimiento">
+            </div>
+            <div class="p-2 bd-highlight"> </div>
+        </div>
+
+        <div class="search-results tableFixHead">
+            <table class="table  table-hover table-sm">
+                <thead class="theadTable">
+
+                    <tr style="height: 40px !important;">
+                        <th>Personal</th>
+                        <th>Lunes Ingreso</th>
+                        <th>Lunes Salida</th>
+                        <th>Martes Ingreso</th>
+                        <th>Martes Salida</th>
+                        <th>Miercoles Ingreso</th>
+                        <th>Miercoles Salida</th>
+                        <th>Jueves Ingreso</th>
+                        <th>Jueves Salida</th>
+                        <th>Viernes Ingreso</th>
+                        <th>Viernes Salida</th>
+                        <th>Sabado Ingreso</th>
+                        <th>Sabado Salida</th>
+                        <th  class="text-center" >Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of horarios |  filter: filtrarMantenimiento  ; index as j" [ngStyle]="{'color': item.estado == '0' && 'red'}" >
+                        <td> <div style="width:300px"> {{item.apellidos_personal}} {{item.nombres_personal}} </div>  </td>
+                        <td>{{item.lunes_I}}</td>
+                        <td>{{item.lunes_S}}</td>
+                        <td>{{item.Martes_I}}</td>
+                        <td>{{item.Martes_S}}</td>
+                        <td>{{item.Miercoles_I}}</td>
+                        <td>{{item.Miercoles_S}}</td>
+                        <td>{{item.Jueves_I}}</td>
+                        <td>{{item.Jueves_S}}</td>
+                        <td>{{item.Viernes_I}}</td>
+                        <td>{{item.Viernes_S}}</td>
+                        <td>{{item.Sabado_I}}</td>
+                        <td>{{item.Sabado_S}}</td>
+                        <td class="text-center">
+                            <img src="./assets/img/editar.png"   tooltip="Editar" (click)="editar(item)"  >
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade " id="modal_mantenimiento" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel  " aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content"  >
+            <div class="p-3 card  modalHeader">
+                <div class="d-flex justify-content-between flotante">
+                    <div class=" bd-highlight">
+                        <i class="fas fa-arrow-circle-left  fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                    <div class=" bd-highlight">
+                        <h5 class="headerTitleModal"> HORARIO PERSONAL  </h5>
+                    </div>
+                    <div class=" bd-highlight">
+                    <i class="far fa-times-circle fa-2x puntero" title="Retornar" (click)="cerrarModal()">  </i>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="modal-body">
+                <form [formGroup]="formParams" >
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label> Personal</label>
+                                <br>
+                                <div [ngClass]="bloquearPersonal">
+                                    <select id="cboPersonal" class="form-control comboBox  select2  " formControlName="id_personal">
+                                        <option value="0"> [ -- SELECCIONE-- ]</option>
+                                        <option [value]="item.id_personal" *ngFor="let item of personales">   {{item.apellidos_personal  | uppercase }} {{item.nombres_personal  | uppercase }} </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive" style="width:95%">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Dia</th>
+                                                <th>Hora Ingreso</th>
+                                                <th>Hora Salida</th>
+        
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Lunes</td>
+                                                <td><input type="time" id="txt_lunes_i" style="width:100px;text-align:center" formControlName="lunes_I" (keydown.enter)="changeFocusInput('txt_lunes_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_lunes_s" style="width:100px ;text-align:center" formControlName="lunes_S" (keydown.enter)="changeFocusInput('txt_martes_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Martes</td>
+                                                <td><input type="time" id="txt_martes_i" style="width:100px;text-align:center" formControlName="Martes_I" (keydown.enter)="changeFocusInput('txt_martes_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_martes_s" style="width:100px;text-align:center" formControlName="Martes_S" (keydown.enter)="changeFocusInput('txt_miercoles_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Miercoles</td>
+                                                <td><input type="time" id="txt_miercoles_i" style="width:100px;text-align:center" formControlName="Miercoles_I" (keydown.enter)="changeFocusInput('txt_miercoles_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_miercoles_s" style="width:100px;text-align:center" formControlName="Miercoles_S" (keydown.enter)="changeFocusInput('txt_jueves_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Jueves</td>
+                                                <td><input type="time" id="txt_jueves_i" style="width:100px;text-align:center" formControlName="Jueves_I" (keydown.enter)="changeFocusInput('txt_jueves_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_jueves_s" style="width:100px;text-align:center" formControlName="Jueves_S" (keydown.enter)="changeFocusInput('txt_viernes_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Viernes</td>
+                                                <td><input type="time" id="txt_viernes_i" style="width:100px;text-align:center" formControlName="Viernes_I" (keydown.enter)="changeFocusInput('txt_viernes_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_viernes_s" style="width:100px;text-align:center" formControlName="Viernes_S" (keydown.enter)="changeFocusInput('txt_sabado_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Sabado</td>
+                                                <td><input type="time" id="txt_sabado_i" style="width:100px;text-align:center" formControlName="Sabado_I" (keydown.enter)="changeFocusInput('txt_sabado_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_sabado_s" style="width:100px;text-align:center" formControlName="Sabado_S" (keydown.enter)="changeFocusInput('txt_domingo_i')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #337ab7 !important;">Domingo</td>
+                                                <td><input type="time" id="txt_domingo_i" style="width:100px;text-align:center" formControlName="Domingo_I" (keydown.enter)="changeFocusInput('txt_domingo_s')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                                <td><input type="time" id="txt_domingo_s" style="width:100px;text-align:center" formControlName="Domingo_S" (keydown.enter)="changeFocusInput('btn_guardar')" class="form-control " maxlength="5" placeholder="00:00"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>     
+                            </div>
+                        </div>  
+          
+                    </div>
+                </form>
+
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <img id="btn_guardar" src="./assets/img/grabar.png" class="puntero" tooltip="Guardar" (click)="saveUpdate()">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

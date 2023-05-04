@@ -1,0 +1,356 @@
+ /* You can add global styles to this file, and also import other style files */
+ 
+ body {
+    background-color: #adb5bd !important;
+}
+
+label {
+    color: #002f77 !important;
+    font-size: 12px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+}
+ 
+
+hr {
+    background-color: cyan;
+}
+
+.form-control,
+input {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-control,
+input {
+    font-family: tahoma;
+    font-size: 13px!important;
+    height: 28px;
+    margin-bottom: 2px;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+.border-left-warning {
+    border-left: 2px solid #d30500 !important;
+}
+
+table thead {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table tbody {
+    font-size: 11px;
+    color: #746660;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h5,
+h5 {
+    font-size: 1rem;
+}
+
+.table .theadTable th {
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-color: #d30500!important
+}
+/* 
+.table .theadTableModal th {
+  background-color: #FFE0CC;
+  color: #746660;
+  border-color: #B8AFAC;
+} */
+
+.fc-toolbar h2 {
+    text-transform: capitalize !important;
+}
+
+.bs-timepicker-field {
+    width: 40px !important;
+    padding: .375rem .55rem;
+}
+/* input file */
+
+.botonFile {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 98%;
+}
+
+.botonFile .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+/* Fin de input file */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 760px !important;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 3.5rem;
+        padding-left: .5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 1000px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 1200px !important;
+    }
+}
+/* //// desabilitar elementos */
+
+.disabledForm {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+    background-color: #ecf0f3;
+    color: black;
+}
+/* //// desabilitar elementos */
+
+#example_info {
+    color: #333333;
+    font-size: 10px !important;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
+}
+
+.comboBox {
+    height: 30px;
+    /* color: #746660; */
+    margin-bottom: 2px;
+    font-size: 11px !important;
+    font-family: tahoma;
+    font-weight: 500;
+}
+/* input file */
+
+.botonFile {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 98%;
+}
+
+.botonFile .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* .botonFile,
+input {
+    height: 40px;
+} */
+
+
+.form-check {
+    height: 41px !important;
+}
+
+/* //- cabecera del titulo  */
+
+.card-header {
+    background-color: #dee2e6 !important;
+    color: white;
+}
+/* Fin de input file */
+/* resaltado de una table */
+
+tbody tr:hover {
+    /* background-color: aquamarine !important; */
+    cursor: pointer;
+}
+
+.linkOpcion {
+    color: red !important;
+    font-weight: 800;
+    text-decoration: underline !important;
+}
+.headerTitle {
+    color: #002f77;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.headerTitleModal {
+    color: #002f77;
+    font-family: 'Montserrat', sans-serif !important;
+}
+/*  Menu ----- TreeeView */
+
+.treeview-container .row-item {
+    margin-bottom: -16px !important;
+    flex-wrap: nowrap;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+    font-size: 12px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-danger2{
+    background-color: #d30500!important; 
+}
+
+.bg-primary {
+    /* background-color: #003575!important; */
+    background-color: #d30500!important; 
+}
+
+.swal2-title {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #003575 !important;
+    font-weight: 700 !important;
+}
+
+.swal2-content {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #003575 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+
+ /* //---- INPUT SEARCH */
+
+ .ng-autocomplete {
+   width: 100% !important;
+   max-width: 600px !important;
+   display: table !important;
+
+}
+
+.autocomplete-container .input-container input {
+   font-size: 11px !important;
+   font-weight: 500;
+}
+
+.autocomplete-container .suggestions-container ul li a {
+   font-size: 11px !important;
+}
+/* //---- FIN INPUT SEARCH */
+
+
+.modalHeader{
+    background-color: #dee2e6 !important;
+}
+
+.modal-footer{
+    background-color: #dee2e6 !important;
+}
+
+ 
+.form-control {
+        border-top: 0px!important;
+        border-left: 0px!important;
+        border-right: 0!important;
+        border-bottom: 1px solid #39c !important;
+        margin-top: 0px!important;
+}
+
+
+
+/* COMBO BUSCADOR SELECT2 */
+
+.select2-container--default .select2-selection--single {
+    font-size: 11px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 30px;
+    font-family: tahoma;
+    font-size: 11px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    height: 30px;
+    /* color: #746660; */
+    margin-bottom: 2px;
+    font-size: 11px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+ 
+
+.select2-results__option {
+    /* color: #746660; */
+    margin-bottom: 2px;
+    font-size: 11px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.select2-container {
+    width: 98% !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 10px !important;
+}
+
+.disabledForm {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
+.resaltarTexto{
+    background-color: beige !important;
+}
